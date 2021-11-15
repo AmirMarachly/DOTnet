@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Station_de_ski</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SwissSkiDB.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="SwissSkiDB.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
